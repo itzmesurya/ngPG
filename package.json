@@ -1,0 +1,23 @@
+{
+  "name": "ngpg",
+  "version": "1.0.0",
+  "description": "sample app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itzmesurya/ngPG.git"
+  },
+  "author": "Surya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itzmesurya/ngPG/issues"
+  },
+  "homepage": "https://github.com/itzmesurya/ngPG#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
