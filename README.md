@@ -19,7 +19,7 @@
 
 ## Learnings:
 
-1. **GULP** :
+###1. **GULP** :
     * Gulp is a javascript task runner. To add a task in gulp first add a *"gulpfile.js"* to the folder.
     * In the gulpfile.js add the following code : 
     </br>
