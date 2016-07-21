@@ -4,4 +4,4 @@
 
 **Contains a sample app that shows steps to create a web application using Node and AngularJS**
 
- ## Folder structure
+### Node server file - *server.js*
