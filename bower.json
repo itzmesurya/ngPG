@@ -15,6 +15,10 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.5.7"
+    "angular": "^1.5.7",
+    "bootstrap": "^3.3.6",
+    "jquery": "1.12.4",
+    "angular-formly": "^8.2.1",
+    "angular-formly-templates-bootstrap": "^6.3.2"
   }
 }
