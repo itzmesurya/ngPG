@@ -21,7 +21,8 @@
 
 1. **GULP** :
     * Gulp is a javascript task runner. To add a task in gulp first add a *"gulpfile.js"* to the folder.
-    * In the gulpfile.js add the following code : </br>
+    * In the gulpfile.js add the following code : 
+    </br>
     ```
     var gulp = require('gulp');
     ```
