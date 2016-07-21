@@ -1,0 +1,20 @@
+{
+  "name": "ngpg",
+  "description": "sample app",
+  "main": "server.js",
+  "authors": [
+    "Surya"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/itzmesurya/ngPG",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7"
+  }
+}
