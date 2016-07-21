@@ -15,7 +15,7 @@
     * Git-bash - https://git-scm.com/downloads
 3. Now open the project folder, and open the git bash in the folder and type the command - <br /><pre>npm install</pre>
 
-</br></br>
+</br>
 
 ## Learnings:
 -------
