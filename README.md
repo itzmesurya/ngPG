@@ -1,7 +1,7 @@
 # ngPG
 
-Contains a sample app
+## Description
 
-1. Created the folder structure.
+**Contains a sample app that shows steps to create a web application using Node and AngularJS**
 
-1. a. Added server.js file --> node server using express.  
+ ## Folder structure
