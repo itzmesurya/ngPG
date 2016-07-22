@@ -16,7 +16,7 @@
 
 </br>
 
-## Learnings:
+## Learnings - Step by step creation of this sample app:
 
 ###1. **GULP** :
 * Gulp is a javascript task runner. To add a task in gulp first add a *"gulpfile.js"* to the folder.
@@ -35,5 +35,36 @@ Later you can call the task from the git bash (or command prompt) that is opened
 
 <pre>$ gulp default</pre>
 
+###2. **Add our vendor scripts** :
+We are now going to use *bower* to install all the vendor scripts and css. For this we first install bower on the machine using following npm command:
+
+<pre>$ npm install bower -g</pre> 
+</br>("-g" is a global flag, this installs bower for the machine, rather than just the project. Also more info about bower can be found [here](https://bower.io/))
+
+Now we are going to need the following bower packages:
+
+* Jquery    (version 1.12.4)
+* Angular   (version 1.5.7)
+* Bootstrap (version 3.3.6)
+
+It can be done with a single bower install command as shown below:
+
+<pre>$ bower install --save jquery#1.12.4 angular bootstrap</pre> 
+
+###3. **WIREDEP** :
+Now that we have the gulp setup, we are going to try and wire the vendor scripts on the index.html.
+
+*  First add the *wiredep* package using the npm command below :
+
+<pre>$ npm install wiredep --save-dev</pre>
+
+Note: --save-dev saves the package as a developement dependecy in package.json.
+
+* Now we create a gulp task to inject the vendor scripts :
+
+```
+
+
+```
 
 [Back to top](https://github.com/itzmesurya/ngPG)
