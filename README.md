@@ -33,7 +33,7 @@ gulp.task('default', function () {
 
 Later you can call the task from the git bash (or command prompt) that is opened in the root folder of the app as shown below:
 
-<br /><pre>$ gulp default</pre>
+<pre>$ gulp default</pre>
 
 
 [Back to top](https://github.com/itzmesurya/ngPG)
