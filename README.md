@@ -63,7 +63,26 @@ Note: --save-dev saves the package as a developement dependecy in package.json.
 * Now we create a gulp task to inject the vendor scripts :
 
 ```
+gulp.task("inject-vendor-scripts", function () {
 
+    var wiredep = require("wiredep").stream;
+
+    var wiredOptions = {
+        bowerJson: require("./bower.json"),
+        directory: "./public/lib",
+        ignorePath: "../.."
+    };
+
+    return gulp.src("./public/app/views/*.html")
+        // .src will look for source of html files which call for dependencies
+        // using the syntax bower:js or bower:css.  
+        .pipe(wiredep(wiredOptions))
+        // wiredep options are passed to configure the wiredep stream 
+        .pipe("./public/app/views");
+        // Files will be picked from gulp.src call stated above and modified 
+        // in the stream and placed into the gulp.dest ie in a specified 
+        // destination.
+});
 
 ```
 
