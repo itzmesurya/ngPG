@@ -74,8 +74,8 @@ gulp.task("inject-vendor-scripts", function () {
     };
 
     return gulp.src("./public/app/views/*.html")
-        // .src will look for source of html files which call for dependencies
-        // using the syntax bower:js or bower:css.  
+        *// .src will look for source of html files which call for dependencies*
+        *// using the syntax bower:js or bower:css.  *
         .pipe(wiredep(wiredOptions))
         // wiredep options are passed to configure the wiredep stream 
         .pipe("./public/app/views");
