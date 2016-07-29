@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Register Page</h1>
+        </div>
+        <div class="col-sm-12">
+            <form ng-submit="rc.onSubmit()" name="rc.form" novalidate>
+                <formly-form model="rc.model" fields="rc.fields" options="rc.options" form="rc.form">
+                    <button type="submit" class="btn btn-primary submit-button" ng-disabled="rc.form.$invalid">Submit</button>
+                    <button type="button" class="btn btn-default" ng-click="rc.options.resetModel()">Reset</button>
+                </formly-form>
+            </form>
+        </div>
+        
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            </br>
+            
+            <div class="panel panel-{{rc.panelType}}">
+                  <div class="panel-heading">
+                        <h3 class="panel-title">Panel in register page</h3>
+                  </div>
+                  <div class="panel-body">
+                        <pre>{{ rc.modelDataFromEmitter | json }}</pre>
+                  </div>
+            </div>
+            
+        </div>
+        
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            </br>
+            <custom-panel></custom-panel>
+        </div>
+
+    </div>
+</div>

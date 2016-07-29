@@ -1,9 +1,38 @@
 <!doctype html>
-<html>
-    <head>
-        <title>Index Page</title>
-    </head>
-    <body>
-       Hello! 
-    </body>
+<html ng-app="app">
+
+<head>
+    <title>Index Page</title>
+    <!--bower:css-->
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!--endbower-->
+    <!--bower:js-->
+    <script src="/lib/angular/angular.js"></script>
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/lib/api-check/dist/api-check.js"></script>
+    <script src="/lib/angular-formly/dist/formly.js"></script>
+    <script src="/lib/angular-formly-templates-bootstrap/dist/angular-formly-templates-bootstrap.js"></script>
+    <script src="/lib/angular-route/angular-route.js"></script>
+    <script src="/lib/rxjs/dist/rx.all.js"></script>
+    <script src="/lib/rx-angular/dist/rx.angular.js"></script>
+    <!--endbower-->
+    <script src="/app/block-mod/block-app.js"></script>
+    <script src="/app/block-mod/services/shared-data-service.js"></script>
+    <script src="/app/app.js"></script>
+    <script src="/app/providers/global-subject-provider.js"></script>
+    <script src="/app/services/global-data-service.js"></script>
+    <script src="/app/services/global-subject-service.js"></script>
+    <script src="/app/controllers/home-controller.js"></script>
+    <script src="/app/controllers/register-controller.js"></script>
+    <script src="/app/controllers/confirm-data-controller.js"></script>
+    <script src="/app/directives/nav-bar.js"></script>
+    <script src="/app/directives/custom-panel.js"></script>
+</head>
+
+<body>
+    <nav-bar></nav-bar>
+    <ng-view></ng-view>
+</body>
+
 </html>

@@ -1,0 +1,31 @@
+[
+    {
+        "key": "text",
+        "type": "input",
+        "templateOptions": {
+            "label": "Text",
+            "placeholder": "Formly is terrific!"
+        },
+        "validators": {
+            "notBob": ["$viewValue","var t= $viewValue;return $viewValue === \"Bob\";"]
+        }
+    },
+    {
+        "key": "expText",
+        "type": "input",
+        "templateOptions": {
+            "label": "Text",
+            "placeholder": "Formly is awesome!"
+        }
+    },
+    {
+        "key": "custom",
+        "type": "reg-custom-field",
+        "templateOptions": {
+            "label": "Custom Text"
+        }
+    },
+    {
+        "template": "<hr/>"
+    }
+]

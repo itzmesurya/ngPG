@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Home Page</h1> </br>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Data from provider after changing at "config" function:</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="well well-sm">
+                        {{hc.nameFromConfig}}
+                    </div>
+                    <h4>Below data has been consumed from a shared servivce</h4>
+                    <div class="well well-lg">
+                        {{hc.sharedDataService | json}}
+                    </div>
+                    <h4>Below storeage data</h4>
+
+                    <div class="well well-lg">
+                        {{hc.sharedDataServiceStorage |json}}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
